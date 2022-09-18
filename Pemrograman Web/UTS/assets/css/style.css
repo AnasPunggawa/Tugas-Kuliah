@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.cf::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.nav ul li .active {
+	padding-bottom: 35px;
+	font-size: 18px;
+	font-weight: 700;
+	border-bottom: 4px solid rgba(201, 44, 38, 0.6);
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav {
+	top: 0;
+	width: 100%;
+	position: fixed;
+	background-color: #c92c26;
+	box-shadow: 0 3px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav ul {
+	padding: 20px 60px;
+	position: relative;
+}
+
+.nav ul .icon a {
+	margin-right: 32px;
+}
+
+.nav ul .link {
+	top: 0;
+	right: 0;
+	padding: 25px 60px;
+	position: absolute;
+	margin-left: 58px;
+	list-style: none;
+	display: inline-block;
+}
+
+.nav ul li {
+	margin-left: 58px;
+	list-style: none;
+	display: inline-block;
+}
+
+.nav ul li a {
+	font-size: 18px;
+	font-weight: 500;
+	top: 0;
+	color: #fff;
+}
+
+.body {
+	margin-top: 80px;
+}
+
+.body .hero {
+	width: 100%;
+	padding: 150px 100px;
+	display: inline-block;
+}
+
+.hero .kelompok {
+	width: 45%;
+	float: left;
+}
+
+.hero .kelompok h1 {
+	font-weight: 600;
+	font-size: 80px;
+}
+
+.hero .kelompok h1 span {
+	display: inline;
+	color: #c92c26;
+}
+
+.hero .kelompok h3 {
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.hero .kelompok .pronounce {
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+.hero .kelompok .about {
+	font-weight: 400;
+	font-size: 20px;
+	color: #c92c26;
+}
+
+.hero .logo {
+	float: right;
+}
+
+.content {
+	padding: 70px 60px;
+	background-color: #f5e9e8;
+	text-align: center;
+}
+
+.content h1 {
+	color: #c92c26;
+	font-weight: 700;
+	opacity: 0.6;
+}
+
+.content .people {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 5.5%;
+}
+
+.content .people .person {
+	margin-top: 70px;
+	padding: 45px 0;
+	width: 298px;
+	height: 373px;
+	background-color: #fff;
+	border: 2px solid #c92c26;
+	border-radius: 30px;
+	box-shadow: 3px 3px 30px rgba(201, 44, 38, 0.5);
+}
+
+.content .people .person:hover {
+	margin-top: 60px;
+	transition: 250ms all ease-out;
+}
+
+.person img {
+	margin-bottom: 25px;
+	padding: 2px;
+	width: 90px;
+	border: 2.5px solid #c92c26;
+	border-radius: 50%;
+}
+
+.person .nama {
+	font-size: 18px;
+	font-weight: 600;
+	color: #c92c26;
+}
+
+.person .deskripsi {
+	margin-top: 5px;
+	font-size: 17px;
+	font-weight: 500;
+}
+
+.sosMed {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.sosMed a i {
+	font-size: 35px;
+	color: #c92c26;
+}
+
+.sosMed a i:hover {
+	margin-top: -5px;
+	font-size: 40px;
+	color: #c92c26;
+	opacity: 0.8;
+	transition: 250ms all ease-in;
+}
+
+.container {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.container .hero {
+	margin-top: 80px;
+	border-bottom: 5px solid #c92c26;
+}
+
+.container h1 {
+	margin-top: -30px;
+	margin-bottom: 20px;
+}
+
+.news {
+	padding: 0 5%;
+	text-align: justify;
+}
+
+.news a {
+	color: #c92c26;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.news h1 {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 32px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 17px;
+	color: #090910;
+}
+
+.news div {
+	margin-bottom: 30px;
+	border-bottom: 1px solid black;
+}
+
+.footer {
+	width: 100%;
+	background-color: #c92c26;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.footer .copyR,
+.footer .copyR a {
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;
+}
