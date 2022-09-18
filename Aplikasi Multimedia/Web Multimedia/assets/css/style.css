@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font: 16px/28px;
+  background: #eaeaea;
+  color: #333;
+  background-image: url(../img/geometric-leaves.png);
+}
+
+.aktif {
+  font-weight: 600;
+  border-bottom: 3px solid salmon;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.header {
+  padding: 15px 25px;
+  border-bottom: 4px solid salmon;
+}
+
+/* .header .judul {
+  font-size: 40px;
+  font-weight: bold;
+} */
+
+.header ul li {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.header a {
+  font-size: 16px;
+  text-decoration: none;
+  color: salmon;
+  padding: 3px;
+  transition: 250ms all ease-out;
+}
+
+.header ul a:hover,
+.dropdown:hover .dropbtn {
+  background-color: salmon;
+  color: #333;
+}
+
+.dropdown .dropbtn {
+  position: relative;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: salmon;
+  padding: 5px 3px;
+  background-color: inherit;
+  margin: 0;
+  transition: 250ms all ease-out;
+}
+
+.dropdown-content {
+  /* width: 250px; */
+  padding: 5px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: 250ms all ease-out;
+}
+
+.dropdown-content a {
+  padding: 3px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hero {
+  height: 630px;
+  background-image: url(../img/HeroBeranda.jpg);
+  background-size: cover;
+  border-bottom: 4px solid salmon;
+  position: relative;
+}
+
+.hero .welcome {
+  top: 40px;
+  right: 40px;
+  display: inline-block;
+  border: 2px solid salmon;
+  border-radius: 10px;
+  position: absolute;
+  padding: 15px;
+  box-shadow: 3px 3px 30px rgba(201, 44, 38, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.content {
+  /* border: 2px solid black; */
+  position: relative;
+}
+
+.height {
+  height: 530px;
+}
+
+.main {
+  width: 100%;
+  padding: 20px;
+  float: left;
+  /* position: relative; */
+  /* border: 2px solid black; */
+}
+
+.WithSideBar {
+  width: 600px;
+}
+
+.main h2 {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.main .penulis {
+  font-size: 11px;
+}
+
+.main .penulis a,
+a {
+  color: salmon;
+  text-decoration: none;
+}
+
+.main p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.sumber {
+  font-weight: 600;
+}
+
+.sidebar {
+  top: 200px;
+  right: 310px;
+  position: fixed;
+  width: 280px;
+  padding: 20px;
+  border: 2px solid salmon;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 3px 3px 30px rgba(201, 44, 38, 0.5);
+}
+
+.home {
+  top: 30px;
+  right: 30px;
+  position: absolute;
+}
+
+.home img {
+  border-radius: 0px;
+  border: none;
+}
+
+.home p {
+  text-align: left;
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #666;
+}
+
+.imgP {
+  padding: 2px;
+  border: 2px solid salmon;
+  border-radius: 50%;
+}
+
+.sidebar p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #666;
+}
+
+.sidebar ul li {
+  text-align: left;
+  font-size: 13px;
+  color: #666;
+}
+
+.sidebar ul,
+.sidebar .sumber {
+  margin-left: 5px;
+  text-align: left;
+}
+
+.sidebar .sumber {
+  margin-top: 5px;
+}
+
+.Dosen {
+  /* border: 2px solid black; */
+  /* margin-bottom: 10px; */
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  /* align-content: center; */
+  /* align-items: center; */
+  padding: 20px;
+}
+
+.DosenPengampuh,
+.DosenMitra {
+  text-align: center;
+  width: 350px;
+  height: 333px;
+  padding: 20px;
+  border: 2px solid salmon;
+  border-radius: 20px;
+  box-shadow: 3px 3px 30px rgba(201, 44, 38, 0.5);
+}
+
+.Dosen h3 {
+  margin-bottom: 10px;
+}
+
+.Dosen p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.Dosen table {
+  border-collapse: collapse;
+}
+
+.Dosen table,
+.Dosen th,
+.Dosen td {
+  /* border: 1px solid #999; */
+  border: 1px solid #333;
+  padding: 5px 15px;
+}
+
+.Dosen th {
+  font-size: 15px;
+}
+
+.Dosen td {
+  font-size: 13px;
+}
+
+.Pengembang {
+  height: 575px;
+}
+
+.Pengembang .katakata {
+  border: 3px solid #666;
+  border-radius: 20px;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  margin: 55px;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #666;
+}
+
+.sosMed {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.sosMed a {
+  color: black;
+  font-size: 20px;
+  transition: 250ms all ease-out;
+}
+
+.sosMed a:hover {
+  color: salmon;
+  transform: scale(1.2, 1.2);
+}
+
+.footer {
+  background-color: #333;
+  padding: 10px;
+}
+
+.footer .copyR {
+  color: #eaeaea;
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer .copyR a {
+  color: salmon;
+  text-decoration: none;
+}
+
+.cf::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.hover:hover {
+  margin-top: -10px;
+  transition: 250ms all ease-out;
+}
