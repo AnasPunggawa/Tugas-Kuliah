@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DaMas</string>
+    <string name="app_name2">Data Mahasiswa!</string>
+    <string name="inData">Masukkan Data</string>
+    <string name="NamLeng">Nama Lengkap</string>
+    <string name="NIM">NIM</string>
+    <string name="Jur">Jurusan</string>
+    <string name="email">Email</string>
+    <string name="pwd">Password</string>
+    <string name="rgst">Register</string>
+    <string name="lgn">Login</string>
+    <string name="frgPwd">Forgot Password?</string>
+    <string name="btnLogin">LOGIN</string>
+    <string name="btnDaftar">DAFTAR</string>
+    <string name="btnSimpan">SIMPAN</string>
+    <string name="btnRstPwd">RESET PASSWORD</string>
+    <string name="sdhPnyAkn">Already have an account? Login</string>
+    <string name="halDft">Registrasi</string>
+    <string name="halDft1">Lengkapi data dirimu, ya!</string>
+    <string name="halRstPwd">Lupa Password?</string>
+    <string name="halRstPwd1">Silahkan Reset Password Kamu</string>
+    <string name="hintEmail">example: DaMas@gmail.com</string>
+    <string name="hintPwd">example: DaMas123</string>
+    <string name="hintNamLeng">example: Data Mahasiswa</string>
+</resources>

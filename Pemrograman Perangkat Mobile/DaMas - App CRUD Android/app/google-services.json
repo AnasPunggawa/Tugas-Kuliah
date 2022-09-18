@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "838017271696",
+    "firebase_url": "https://damas-b4617-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "damas-b4617",
+    "storage_bucket": "damas-b4617.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838017271696:android:8bed3f9de29101898f5515",
+        "android_client_info": {
+          "package_name": "com.damas.uaskelompok7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838017271696-6iuqtc9dop4fpettkakmmgiagq5ua46d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvFWR8-gJoBxc81A8JQjTyx2QSpTMD0fE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "838017271696-6iuqtc9dop4fpettkakmmgiagq5ua46d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

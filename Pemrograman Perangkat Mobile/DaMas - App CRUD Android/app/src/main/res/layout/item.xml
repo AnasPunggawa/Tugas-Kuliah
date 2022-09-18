@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    android:backgroundTint="@color/btnColor"
+    android:id="@+id/card_view"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/NamLeng"
+                android:fontFamily="@font/mohr_rounded_light"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_nim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/NIM"
+                android:fontFamily="@font/mohr_rounded_light"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_jurusan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Jur"
+                android:fontFamily="@font/mohr_rounded_light"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/hps_data"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/remove"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

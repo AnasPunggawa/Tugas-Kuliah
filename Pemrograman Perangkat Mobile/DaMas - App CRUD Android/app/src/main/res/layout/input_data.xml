@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/bg_indt"
+        android:layout_width="wrap_content"
+        android:layout_height="40pt"
+        android:background="@drawable/ellipse"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/ic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inData"
+            android:fontFamily="@font/mohr_rounded_regular"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/indt_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bg_indt"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="45dp"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/namleng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NamLeng"
+            android:fontFamily="@font/mohr_rounded_semibold"
+            android:textColor="@color/black"
+            android:textSize="10sp"/>
+
+        <EditText
+            android:id="@+id/in_namleng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:fontFamily="@font/mohr_rounded_light"
+            android:textSize="10sp"
+            android:layout_marginStart="6dp"/>
+
+        <TextView
+            android:id="@+id/nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NIM"
+            android:fontFamily="@font/mohr_rounded_semibold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="10sp"/>
+
+        <EditText
+            android:id="@+id/in_nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:fontFamily="@font/mohr_rounded_light"
+            android:textSize="10sp"
+            android:layout_marginStart="6dp"/>
+
+        <TextView
+            android:id="@+id/jurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Jur"
+            android:fontFamily="@font/mohr_rounded_semibold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="10sp"/>
+
+        <EditText
+            android:id="@+id/in_jurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:fontFamily="@font/mohr_rounded_light"
+            android:textSize="10sp"
+            android:layout_marginStart="6dp"/>
+
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/btnSimpan"
+            android:textColor="@color/white"
+            android:fontFamily="@font/mohr_rounded_light"
+            android:background="@drawable/bgbutton"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+</RelativeLayout>
