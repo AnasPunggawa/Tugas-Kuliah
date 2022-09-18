@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Access Control</title>
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Web -->
+    <link rel="icon" href="../assets/img/icon.ico" type="image/icon type" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"><a href="../profile.html">Punggawa</a></span>
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="./profile.html">Punggawa</a></span>
+            <i class="bx bx-x sidebarClose"></i>
+          </div>
+          <ul class="nav-links">
+            <li>
+              <img src="../assets/img/profileSideBar.JPG" alt="Anas Punggawa" />
+            </li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../profile.html">Profile</a></li>
+          </ul>
+          <div class="icons">
+            <a href="https://www.facebook.com/anaspunggawa.anas" target="_blank"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+            <a href="https://www.instagram.com/anspunggawa/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://github.com/AnasPunggawa" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <main>
+      <div class="container">
+        <div class="hero">
+          <img
+            src="../assets/img/hero-pertemuan 3_access control.jpg"
+            alt="access control"
+          />
+        </div>
+        <div class="content">
+          <h2>Access Control</h2>
+          <p class="date">Jumat, 25 Februari 2022</p>
+          <a href="#" class="hashtag">#pertemuan3</a>
+          <div class="daftar-isi">
+            <p class="daftarIsiOnClick">Daftar Isi</p>
+            <ol>
+              <a href="#1">
+                <li>Least Privilege</li>
+              </a>
+              <a href="#2">
+                <li>Subjek & Objek</li>
+              </a>
+              <a href="#3">
+                <li>Access Control Models</li>
+              </a>
+              <a href="#4">
+                <li>Access Control Administration</li>
+              </a>
+              <a href="#5">
+                <li>Accountability</li>
+              </a>
+            </ol>
+          </div>
+          <p>
+            Access Control adalah kumpulan dari teknik, mekanisme dan komponen
+            yang digunakan untuk melindungi aset informasi di dalam sistem.
+            Access control berupa pemberian kendali akses terhadap informasi di
+            dalam sistem apakah bisa dilihat ataupun diubah oleh pengguna. Dalam
+            pengaturan access control perlu diperhatikan sifat suatu informasi
+            apakah rahasia atau tidak, metode yang digunakan untuk
+            mengidentifikasi pengguna, dan cara untuk memastikan bahwa orang
+            yang mengakses informasi benar-benar merupakan orang yang berhak.
+          </p>
+          <ol>
+            <!-- Least Privilege -->
+            <h3 class="sub-title" id="1"><li>Least Privilege</li></h3>
+            <p>
+              Least Privilege merupakan sebuah prinsip di mana setiap pengguna
+              hanya memiliki hak akses yang benar-benar dibutuhkan oleh
+              pengguna. Least Privilege berutujuan untuk mencegah authorization
+              creep, yaitu kondisi ketika sebuah subjek memiliki hak yang
+              berlebih dibanding apa yang dibutuhkannya.
+            </p>
+            <!-- Subjek & Objek -->
+            <h3 class="sub-title" id="2"><li>Subjek & Objek</li></h3>
+            <p>
+              Subjek merupakan suatu entitas aktif yang membuat permintaan
+              akses. Sedangkan objek berupa bagian yang pasif dari akses. Dalam
+              kebijakan access control, subjek diberikan ijin sesuai dengan
+              otoritasnya untuk bisa mengakses objek yang telah diijinkan
+              sebelumnya.
+            </p>
+            <!-- Access Control Models -->
+            <h3 class="sub-title" id="3"><li>Access Control Models</li></h3>
+            <p>
+              Access Control Models merupakan metode yang dipilih sesuai dengan
+              organisasi agar memaksimalkan tingkat keamanan suatu sistem.
+              Access control models memungkinkan untuk memebagi kebijakan
+              keamanan yang rumit menjadi langkah keamanan yang lebih sederhana
+              dan terkontrol.
+            </p>
+            <ol>
+              <li>Mandatory Access Control</li>
+              <p>
+                Mandatory Access Control (MAC) merupakan kontrol akses
+                berdasarkan pada sistem penamaan keamanan. Pengguna subjek
+                memiliki izin keamanan dan obyek memiliki nama keamanan yang
+                menyimpan kategori data. MAC digunakan untuk mengkategorikan
+                informasi dan kerahasiaan yang bersifat sangat penting, seperti
+                di bidang militer. Berikut adalah kategori data komersil.
+              </p>
+              <ul>
+                <li>Public, yaitu data yang tidak dilindungi di manapun.</li>
+                <li>
+                  Sensitive, yaitu data yang berisi informasi bisa mempengaruhi
+                  bisnis dan kepercayaan publik jika tidak dilindungi dengan
+                  baik.
+                </li>
+                <li>
+                  Private, yaitu data yang berisi informasi personal yang bisa
+                  berdampak negatif jika data seseorang bocor.
+                </li>
+                <li>
+                  Confidential, yaitu data yang berisi informasi perusahaan yang
+                  berdampaik negatif jika data perusahaan/organisasi bocor.
+                </li>
+              </ul>
+              <p>
+                Tujuan dari MAC adalah untuk menjaga kerahasiaan dan integritas
+                informasi, mencegah terjadinya serangan, dan mencegah pengguna
+                untuk dapat mengubah atribut keamanan.
+              </p>
+              <li>Directional Access Control</li>
+              <p>
+                Directional Access Control merupakan model kontrol yang
+                menggunakan identitas dari subyek untuk menentukan apakan
+                permintaan akses dapat diterima atau tidak. Model ini umumnya
+                digunakan di berbagai sistem operasi untuk memberikan hak akses
+                read, write and execute permissions. Setiap objek yang ingin
+                diakses memiliki persmission yang menentukan pengguna atau
+                kelompok bisa mengaksesnya atau tidak. Directional access
+                control juga termasuk identity-based access control dan access
+                control list.
+              </p>
+              <li>Identity-Based Access Control</li>
+              <p>
+                Identity-Based Access Control merupakan model kontrol yang
+                menggunakan userid atau keanggotaan kelompok dari pengguna yang
+                bersangkutan untuk mengakses suatu objek. Pemilik dari objek
+                yang memberikan keputusan kepada pengguna atau kelompok mana
+                yang dapat mengakses suatu objek.
+              </p>
+              <li>Access Control List</li>
+              <p>
+                Access Control List (ACL) merupakan model kontrol untuk
+                memudahkan admin agar kelompok dari objek atau subjek dapat
+                dikontrol bersama-sama. Model ini dapat memberikan hak akses
+                kepada kelompok dari subjek atau memberikan hak kepada akses
+                kelompok dari subjek kepada objek tertentu.
+              </p>
+              <li>Non-discretionary Access Control</li>
+              <p>
+                Non-discretionary Access Control merupakan model kontrol yang
+                menggunakan peran dari subjek atau aktivitas yang ditugaskan
+                kepada sebuah subjek untuk menerima atau menolak akses. Model
+                ini cocok digunakan pada kasus high turnover atau reassignment.
+              </p>
+              <li>Lattice-Based Access Control</li>
+              <p>
+                Lattice-Based Access Control merupakan salah satu model kontrol
+                desain Non-discretionary Access Control. Menggunakan peran atau
+                tugas di mana setiap hubungan antara subjek dan objek memiliki
+                beberapa pasang batasan. Batasan akses berupa peraturan dan
+                kondisi yang memberikan izin akses sebuah objek.
+              </p>
+              <li>State Machine Model</li>
+              <p>
+                State Machine Model merupakan model yang sering digunakan untuk
+                entitas kehidupan nyata di mana pernyataan yang spesifik,
+                transisinya ada, dan dimengerti. Dengan adanya transisi akan
+                mengijinkan untuk mengubah sebuah objek tertutup menjadi
+                terbuka.
+              </p>
+              <ul>
+                <li>
+                  Model Bell-Lapadula, yaitu model yang membuat daftar kontrol
+                  akses dan nama keamanan untuk diterapkan di keamanan objek.
+                </li>
+                <li>
+                  Model Biba, yaitu model yang mendefinisikan pernyataan dan
+                  transisi yang berfokus pada integritas data dan bukan
+                  kerahasiaan.
+                </li>
+                <li>
+                  Model Clark-Wilson, yaitu model yang memblok semua akses
+                  terhadap sebagian kecil program akses yang dikontrol secara
+                  ketat.
+                </li>
+                <li>
+                  Model Noninterference, yaitu model pelengkap bagi model
+                  lainnya dimana menjamin bahwa perubahan pada suatu tingkat
+                  keamanan tidak mengorbankan level keamanan lainnya dan
+                  mempengaruhi suatu objek dalam hal lain.
+                </li>
+              </ul>
+            </ol>
+            <!-- Access Control Administration -->
+            <h3 class="sub-title" id="4">
+              <li>Access Control Administration</li>
+            </h3>
+            <p>
+              Access Control Administration merupakan langkah yang dilakukan
+              setelah memilih desain access kontrol. Hal ini dapat diterapkan
+              secara centralized atau decentralized tergantung pada kebutuhan
+              dari organisasi dan sifat informasi.
+            </p>
+            <ol>
+              <li>Centralized Access Control</li>
+              <p>
+                Centralized Access Control merupakan pendekatan yang sangat
+                mudah karena objek hanya dipelihara pada lokasi tunggal.
+                Kelemahannya berupa single point of failure dan masalah
+                performa. Contohnya RADIUS (Remote Authentication Dial-In User
+                Service, misalnya validasi pengguna berdasarkan daftar pengguna
+                yang ada di server) dan CHAP (Challenge Handshake Authentication
+                Protocol, misalnya menampilkan tantangan ketika pengguna meminta
+                akses).
+              </p>
+              <li>Decentralized Access Control</li>
+              <p>
+                Decentralized Access Control merupakan pendekatan yang
+                meletakkan tanggung jawab lebih dekat terhadap objek sehingga
+                lebih stabil. Diterapkan dalam security domain.
+              </p>
+            </ol>
+            <!-- Accountability -->
+            <h3 class="sub-title" id="5"><li>Accountability</li></h3>
+            <p>
+              Accountability berkaitan dengan alat untuk aktivitas kontrol
+              terutama dalam hal pencapaian hasil. Dengan membuat log/perekam
+              dari aktivitas pengontrolan atau sistem audit untuk membantu
+              administrasi. Dengan adanya log aktivitas akan membantu
+              administrator untuk memantau segala aktivitas yang terjadi di
+              dalam sistem.
+            </p>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <!-- Button Scroll to Top -->
+    <div class="btnToTop">
+      <i class="bx bx-up-arrow-alt"></i>
+    </div>
+    <!-- Akhir Button Scroll to Top -->
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright 2022 🔥, by Anas Punggawa</p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Local Javascript -->
+    <script src="../assets/javascript/script.js"></script>
+    <script src="../assets/javascript/articles-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autentikasi Identitas</title>
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Web -->
+    <link rel="icon" href="../assets/img/icon.ico" type="image/icon type" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"><a href="../profile.html">Punggawa</a></span>
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="./profile.html">Punggawa</a></span>
+            <i class="bx bx-x sidebarClose"></i>
+          </div>
+          <ul class="nav-links">
+            <li>
+              <img src="../assets/img/profileSideBar.JPG" alt="Anas Punggawa" />
+            </li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../profile.html">Profile</a></li>
+          </ul>
+          <div class="icons">
+            <a href="https://www.facebook.com/anaspunggawa.anas" target="_blank"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+            <a href="https://www.instagram.com/anspunggawa/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://github.com/AnasPunggawa" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <main>
+      <div class="container">
+        <div class="hero">
+          <img
+            src="../assets/img/hero-pertemuan 4_autentikasi identitas.JPG"
+            alt="autentikasi identitas"
+          />
+        </div>
+        <div class="content">
+          <h2>Autentikasi Identitas</h2>
+          <p class="date">Jumat, 04 Maret 2022</p>
+          <a href="#" class="hashtag">#pertemuan4</a>
+          <div class="daftar-isi">
+            <p class="daftarIsiOnClick">Daftar Isi</p>
+            <ol>
+              <a href="#1">
+                <li>Elemen Autentikasi</li>
+              </a>
+              <a href="#2">
+                <li>Faktor-faktor Autentikasi</li>
+              </a>
+              <a href="#3">
+                <li>Enkripsi Pesan Dengan Kriptografi Simetri</li>
+              </a>
+              <a href="#4">
+                <li>Enkripsi Pesan Dengan Kriptografi Asimetri</li>
+              </a>
+            </ol>
+          </div>
+          <p>
+            Autentikasi merupakan sebuah metode untuk membuktikan bahwa
+            informasi benar-benar asli, atau orang yang mengakses/memberikan
+            informasi merupakan orang yang dimaksud. Dalam teknik autentikasi,
+            prosedur yang digunakan bertujuan untuk membuktikan hal-hal sebagai
+            berikut.
+          </p>
+          <ul>
+            <li>Keaslian pesan (message integrity)</li>
+            <li>Keaslian identitas pengirim (user authentication)</li>
+            <li>Pengirim tidak dapat menyangkal isi pesan (non-repudiation)</li>
+          </ul>
+          <ol>
+            <!-- Elemen Autentikasi -->
+            <h3 class="sub-title" id="1"><li>Elemen Autentikasi</li></h3>
+            <p>
+              Elemen-elemen yang diberikan autentikasi adalah person / group /
+              code / system dengan tingkat perbedaan elemen yang diautentikasi.
+              Tujuannya adalah distinguishing characteristic yaitu karakteristik
+              untuk membedakan penipuan komputer seperti pelaku mengakses atau
+              memakai komputer dengan tujuan untuk melakukan rancangan penipuan.
+              Sehingga yang bertanggung jawab dalam sistem adalah seorang
+              operator / pemilik sistem / administrator. Authentication
+              mechanism mengacu ke hak akses pada access control mechanism.
+            </p>
+            <!-- Faktor-faktor Autentikasi -->
+            <h3 class="sub-title" id="2"><li>Faktor-faktor Autentikasi</li></h3>
+            <ol>
+              <li>Password</li>
+              <p>
+                Password merupakan sebuah kombinasi rahasia yang terdiri dari
+                kombinasi huruf, angka, dan karakter khusus. Password biasanya
+                dipasangkan dengan username yang digunakan untuk metode
+                otentikasi yang umum dalam metode single factor authentication.
+                Username adalah nama pengguna yang unik digunakan sebagai
+                identitas pengguna.
+              </p>
+              <p>Berikut adalah cara penanganan password eksternal.</p>
+              <ul>
+                <li>
+                  Sebaiknya tidak diberitahukan kepada orang lain dan tidak
+                  dituliskan
+                </li>
+                <li>
+                  Tidak menggunakan data yang diketahui orang lain seperti
+                  tanggal lahir, nomor rumah, nomor telepon, dan lain-lain
+                </li>
+                <li>Sebaiknya diganti secara berkala</li>
+                <li>Menggunakan password yang rumit dan karakter minimal 8</li>
+              </ul>
+              <p>Berikut adalah cara penanganan password pada sistem</p>
+              <ul>
+                <li>
+                  Password hanya dapat menerima minimal 8 karakter dengan
+                  kombinasi angka, huruf, maupun karakter khusus
+                </li>
+                <li>
+                  Ketika password dimasukkan, sebaiknya langsung terinskripsi ke
+                  ciphertext
+                </li>
+                <li>
+                  Ciphertext sulit untuk dipecahkan/dikomputasi oleh orang lain
+                </li>
+                <li>Password tidak tersimpan di dalam sistem</li>
+              </ul>
+              <p>
+                Adapun serangan yang biasanya terjadi pada password adalah
+                sebagai berikut.
+              </p>
+              <ul>
+                <li>Guessing attack / dictionary attack</li>
+                <li>Social engineering</li>
+                <li>Sniffing</li>
+                <li>Trojan login</li>
+              </ul>
+              <li>Biometrics</li>
+              <p>
+                Biometrics merupakan metode otentikasi yang menggunakakan
+                teknologi dan ilmiah berdasarkan biologi dan digunakan dalam
+                jaminan informasi. Biometrik mengidentifikasi otentikasi entri,
+                data, atau akses yang aman melalui informasi biologis manusia
+                seperti DNA, sidik jari, retina mata, wajah, maupun pola garis
+                tangan. Selain secara fisik, biometrik juga dapat
+                mengidentifikasi perilaku seperti pola suara, tanda tangan,
+                maupun tulisan tangan.
+              </p>
+              <p>
+                Autentikasi biometik biasanya menerapkan pendekatan pattern
+                recognition (pengenalan pola) dengan suatu profile yang dibuat
+                untuk seseorang dengan benar dan penyesuaian nilai dihitung pada
+                setiap usaha autentikasi.
+              </p>
+              <p>Berikut adalah kelebihan dari biometrik</p>
+              <ul>
+                <li>Sulit untuk diduplikasi, dipalsukan atau dicuri</li>
+                <li>Penggunaan yang mudah dan nyaman</li>
+                <li>Tidak dapat digunakan oleh orang lain</li>
+                <li>Penyimpanan yang dibutuhkan sedikit</li>
+              </ul>
+              <p>Berikut adalah kelemahan dari biometrik</p>
+              <ul>
+                <li>Sistem biometrik harus berjalan dan mahal</li>
+                <li>
+                  Jika semua data biometrik yang ditangkap sistem gagal, maka
+                  akan mengakibatkan kegagalan dalam identifikasi pengguna
+                </li>
+                <li>
+                  Masih membutuhkan database untuk menyimpan data sehingga mudah
+                  diretas
+                </li>
+                <li>Biasa terjadi penolakan palsu dan penerimaan palsu</li>
+                <li>
+                  Jika bagian tubuh yang digunakan sebagai identifikasi
+                  biometrik terluka, maka sistem otentikasi biometruk mungkin
+                  tidak berfungsi
+                </li>
+              </ul>
+              <li>Tanda-Tangan Digital (Digital Signature)</li>
+              <p>
+                Tanda-tangan sudah bisa digunakan dalam otentikasi dokumen
+                cetak. Dengan karakteristik sebagai bukti yang otentik, tidak
+                dapat dilupakan, tidak dapat dipindakan untuk digunakan kembali,
+                dokumen yang telah ditandatangani tidak bisa diubah, dan tidak
+                dapati disangkal (non-repudiation).
+              </p>
+              <p>
+                Tanda-tangan digital berfungsi untuk tanda-tangan pada dokumen
+                kertas sebagai autentikasi pada data digital seperti pesan dan
+                dokumen elektronik. Tanda-tangan digital selalu berbeda antara
+                satu dokumen dengan dokumen lainnya.
+              </p>
+            </ol>
+            <!-- Enkripsi Pesan Dengan Kriptografi Simetri -->
+            <h3 class="sub-title" id="3">
+              <li>Enkripsi Pesan Dengan Kriptografi Simetri</li>
+            </h3>
+            <p>
+              Algoritma simetris adalah sebuah algoritma yang menggunakan kunci
+              yang sama antara kunci enkripsi dan kunci dekripsi sehingga
+              algoritma ini disebut sebagai single-key algorithm. Pesan yang
+              dienkripsi dengan algoritma ini Sudha memberikan solusi untuk
+              otentikasi pengirim dan keaslian pesan. Oleh sebab itu, kunci
+              simetri hanya diketahui oleh pengirim dan penerima saja.
+              Kekurangannya adalah tidak tersedianya mekanisme untuk
+              anti-penyangkalan (arbitrase).
+            </p>
+            <!-- Enkripsi Pesan Dengan Kriptografi Asimetri -->
+            <h3 class="sub-title" id="4">
+              <li>Enkripsi Pesan Dengan Kriptografi Asimetri</li>
+            </h3>
+            <p>
+              Algoritma asimetris adalah sebuah algoritma yang menggunakan dua
+              kunci yaitu kunci publik (public key) dan kunci privat (private
+              key). Kunci publik dibagikan secara umum sedangkan kunci privat
+              disimpan secara rahasia oleh pengguna. Pada umumnya, kunci publik
+              digunakan untuk sebagai kunci enkripsi sedangkan kunci privat
+              digunakan sebagai kunci dekripsi.
+            </p>
+          </ol>
+          <p>
+            Algoritma yang biasa digunakan untuk enkripsi adalah sebagai
+            berikut.
+          </p>
+          <ul>
+            <li>Fungsi Hash</li>
+            <li>Diffie & Hellman</li>
+            <li>RSA</li>
+            <li>E1Gamal, dan lain-lain</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Button Scroll to Top -->
+    <div class="btnToTop">
+      <i class="bx bx-up-arrow-alt"></i>
+    </div>
+    <!-- Akhir Button Scroll to Top -->
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright 2022 🔥, by Anas Punggawa</p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Local Javascript -->
+    <script src="../assets/javascript/script.js"></script>
+    <script src="../assets/javascript/articles-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+/* Article 1 */
+.container .hero {
+  padding-top: 20px;
+  width: 100%;
+}
+.container .hero.pict {
+  padding-top: 0;
+  width: 100%;
+}
+
+.content {
+  color: var(--content-text);
+}
+
+.hero img,
+.pict img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content ul,
+.content ol {
+  padding-left: 20px;
+}
+
+.content .daftar-isi {
+  padding: 10px;
+  width: 40%;
+  background-color: var(--nav-color);
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+
+.daftar-isi .daftarIsiOnClick {
+  cursor: pointer;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.daftar-isi ol {
+  padding-left: 40px;
+  display: none;
+}
+
+.daftar-isi.active ol {
+  display: block;
+}
+
+.daftar-isi ol a {
+  text-decoration: none;
+}
+
+.daftar-isi ol li {
+  text-align: start;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.daftar-isi .daftarIsiOnClick:hover,
+.daftar-isi li:hover {
+  color: var(--content-textHV);
+}
+
+.content ol ol {
+  list-style: lower-alpha;
+}
+
+.content ol ul {
+  list-style: disc;
+}
+
+.content .sub-title {
+  margin-top: 5px;
+}
+
+/* Button Scroll to Top */
+.btnToTop {
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  bottom: 60px;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  padding: 3px;
+  background-color: var(--nav-color);
+  color: var(--text-color);
+  border-radius: 50%;
+}
+
+.btnToTop i {
+  font-size: 20px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media screen and (max-width: 624px) {
+  .content .daftar-isi {
+    padding: 8px;
+    width: 80%;
+  }
+}

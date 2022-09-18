@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengantar Keamanan Komputer</title>
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Web -->
+    <link rel="icon" href="../assets/img/icon.ico" type="image/icon type" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"><a href="../profile.html">Punggawa</a></span>
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="./profile.html">Punggawa</a></span>
+            <i class="bx bx-x sidebarClose"></i>
+          </div>
+          <ul class="nav-links">
+            <li>
+              <img src="../assets/img/profileSideBar.JPG" alt="Anas Punggawa" />
+            </li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../profile.html">Profile</a></li>
+          </ul>
+          <div class="icons">
+            <a href="https://www.facebook.com/anaspunggawa.anas" target="_blank"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+            <a href="https://www.instagram.com/anspunggawa/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://github.com/AnasPunggawa" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <main>
+      <div class="container">
+        <div class="hero">
+          <img
+            src="../assets/img/hero-pertemuan 1_pengantar keamanan komputer.JPG"
+            alt="pengantar keamanan komputer"
+          />
+        </div>
+        <div class="content">
+          <h2>Pengantar Keamanan Komputer</h2>
+          <p class="date">Minggu, 19 Februari 2022</p>
+          <a href="#" class="hashtag">#pertemuan1</a>
+          <div class="daftar-isi">
+            <p class="daftarIsiOnClick">Daftar Isi</p>
+            <ol>
+              <a href="#1">
+                <li>Aspek Keamanan Komputer</li>
+              </a>
+              <a href="#2">
+                <li>Model Serangan Keamanan</li>
+              </a>
+              <a href="#3">
+                <li>Lapisan Keamanan</li>
+              </a>
+              <a href="#4">
+                <li>Kriptografi</li>
+              </a>
+              <a href="#5">
+                <li>Karakteristik Cryptosystem yang Baik</li>
+              </a>
+              <a href="#6">
+                <li>Tipe-tipe Program Jahat</li>
+              </a>
+            </ol>
+          </div>
+          <p>
+            Keamanan komputer dibutuhkan karena nilai sebuah informasi sangatlah
+            penting dan mewajibkan untuk mengakses dan menyediakan informasi
+            secara cepat dan tepat menjadi sangat berpengaruh pada sebuah
+            perusahaan. Selain itu, infrastruktur jaringan komputer seperti LAN
+            dan Internet mengharuskan untuk menyediakan informasi secara akurat
+            sehingga membuka potensi adanya celah keamanan.
+          </p>
+          <p>
+            Kejahatan komputer semakin marak terjadi disebabkan karena semakin
+            banyaknya aplikasi yang berbisnis TI dan jaringan komputer seperti
+            online banking, e-commerce dan Electronic Data Interchange (EDI),
+            desentralisasi/penyebaran server, perpindahan dari single vendor ke
+            multivendor, kemampuan pengguna semakin meningkat, belum adanya
+            hukum dan ketentuan yang pasti, sistem yang semakin kompleks
+            sehingga source code program semakin banyak, dan banyak perangkat
+            yang terhubung dengan internet.
+          </p>
+          <p>
+            Berdasarkan celah keamanan, keamanan dapat dikategorikan menjadi 4,
+            yaitu:
+          </p>
+          <ul>
+            <li>
+              Keamanan Fisik, berupa akses orang ke gedung, peralatan, dan media
+              yang digunakan. Contohnya wiretapping (yang berhubungan dengan
+              akses ke kabel atau komputer), Denial of Service (DoS, mematikan
+              layanan atau spam saluran komunikasi), dan Syn Flood Attack
+              (sistem yang dituju dipenuhi akan permintaan sehingga sistem
+              menjadi lambat/macet).
+            </li>
+            <li>
+              Keamanan personel, berupa orang yang termasuk pengguna dan profil
+              orang yang mempunya akses (pemakai dan pengelola)
+            </li>
+            <li>Keamanan data, media, dan teknik komunikasi</li>
+            <li>
+              Keamanan operasi, berupa tata cara dipakai untuk mengatur dan
+              mengelola sistem keamanan serta setelah serangan.
+            </li>
+          </ul>
+          <ol>
+            <!-- Aspek Keamanan Komputer -->
+            <h3 class="sub-title" id="1"><li>Aspek Keamanan Komputer</li></h3>
+            <ol>
+              <li>Privacy/Confidentiality</li>
+              <p>
+                Privacy/Confidentiality berupa menjaga informasi dari orang lain
+                yang tidak memiliki akses. Aspek ini mengarah pada data yang
+                bersifat pribadi dan privat seperti email. Data yang diberikan
+                hanya dapat digunakan untuk keperluan tertentu saja. Misalnya
+                data-data yang bersifat pribadi seperti kartu identitas. Jenis
+                serangannya berupa penyadapan (program sniffer). Untuk mencegah
+                serangan tersebut dapat dilakukan dengan menggunakan teknologi
+                kriptografi.
+              </p>
+              <li>Integrity</li>
+              <p>
+                Integrity berupa informasi yang tetap dan tidak dapat diubah
+                seijin pemiliknya. Misalnya pesan yang dikirim tidak boleh
+                berubah ditengah pengiriman sampai di penerima. Jenis
+                serangannya berupa virus, trojan horse atau program yang
+                mengubah informasi tanpa izin, dan man in the middle attack.
+                Untuk mencegah serangan tersebut dapat dilakukan dengan
+                menggunakan MAC (Message Authentication Code), hash function –
+                blockchain, dan digital signature.
+              </p>
+              <li>Authentication</li>
+              <p>
+                Authentication berupa teknik untuk membuktikan bahwa informasi
+                tersebut asli, atau orang yang mengakses atau memberikan
+                informasi betul-betul adalah orang yang dimaksud. Untuk
+                mendukung keasliannya dapat menggunaakn teknologi
+                watermarking/menandai dokumen yang asli dan digital signature.
+              </p>
+              <li>Availability</li>
+              <p>
+                Availability berupa ketersediaan sebuah informasi ketika
+                dibutuhkan. Serangannya dapat berupa DoS attack (permintaan yang
+                diterima melebihi kapasistas sehingga mengganggu sistem) dan
+                mailbomb (mengirim email secara bertubi-tubi sehingga email
+                tidak dapat dibuka).
+              </p>
+              <li>Access Control</li>
+              <p>
+                Access Control berupa pemberian batas untuk mengakses informasi
+                orang tertentu. Aspek ini berhubungan dengan masalah
+                authentication dan privasi. Biasanya menggunakan metode
+                kombinasi username dan password atau mekanisme lainnya.
+              </p>
+              <li>Non-repudiation</li>
+              <p>
+                Non-repudiation berupa merekam jejak aktivitas sehingga menjadi
+                bukti dan tidak dapat disangkal. Biasanya digunakan untuk
+                e-commerce.
+              </p>
+            </ol>
+            <!-- Model Serangan Keamanan -->
+            <h3 class="sub-title" id="2"><li>Model Serangan Keamanan</li></h3>
+            <ol>
+              <li>Interruption</li>
+              <p>
+                Interruption berupa serangan terhadap perangkat sistem menjadi
+                rusak atau tidak tersedia. Serangan biasanya ditujukan terhadap
+                ketersediaan (availability) dari sistem. Contoh serangannya
+                berupa DoS attack.
+              </p>
+              <li>Interception</li>
+              <p>
+                Interception berupa serangan dari pihak yang tidak berwenang
+                sehingga berhasil mengakses aset atau informasi. Misalnya
+                penyadapan (wiretapping).
+              </p>
+              <li>Modification</li>
+              <p>
+                Modification berupa serangan dari pihak yang tidak berwenang
+                sehingga dapat mengubah aset sistem. Misalnya mengubah isi dari
+                website perusahaan.
+              </p>
+              <li>Fabrication</li>
+              <p>
+                Fabrication berupa serangan dari pihak yang tidak berwenang
+                sehingga menyisipkan objek palsu ke dalam sistem. Misalnya
+                memasukkan pesan-pesan palsu ke dalam jaringan komputer.
+              </p>
+            </ol>
+            <!-- Lapisan Keamanan -->
+            <h3 class="sub-title" id="3"><li>Lapisan Keamanan</li></h3>
+            <ol>
+              <li>Lapisan Fisik</li>
+              <p>
+                Lapisan Fisik berupa lapisan yang membatasi akses fisik ke
+                mesin. Misalnya akses masuk ke ruangan komputer, penguncian
+                komputer secara perangkat keras, keamanan BIOS, dan keamanan
+                Boorloader. Bisa juga berupa mencadangkan data seperti memilih
+                perangkat cadangan dan menjadwalkan pencadangan. Untuk
+                mendetaksi gangguan fisik dapat dilakukan dengan cara pengecekan
+                log file dan mengontrol akses sumber daya sistem.
+              </p>
+              <li>Keamanan Lokal</li>
+              <p>
+                Keamanan Lokal berupa hak-hak pengguna, fasilitas minimal yang
+                diperlukan, dan memperhatikan aktivitas akses.
+              </p>
+              <li>Keamanan File dan System File</li>
+              <p>
+                Keamanan File dan System File berupa folder pengguna tidak dapat
+                mengubah sistem seperti partisi, perangkat dan lain-lain. Dapat
+                melakukan pengaturan batas system file, mengatur hak akses dan
+                perizinan file, dan selalu mengecek program-program yang tidak
+                dikenal.
+              </p>
+              <li>Keamanan Password dan Enkripsi</li>
+              <p>
+                Keamanan Password dan Enkripsi berupa menggunakan password yang
+                baik untuk mencegah serngan bruto force, senantiasa mengenkripsi
+                file yang dipertukarkan, dan melakukan pengamanan pada level
+                tampilan seperti screen saver.
+              </p>
+              <li>Keamanan Kernel</li>
+              <p>
+                Keamanan Kernel berupa pengecekan dan update kernel sistem
+                operasi, dan mempelajari bug/celah dan kekurangan-kekurangan
+                pada sistem operasi.
+              </p>
+              <li>Keamanan Jaringan</li>
+              <p>
+                Keamanan Jaringan berupa mewaspadai paket sniffer yang sering
+                menyadap port ethernet, mengecek integritas data, verifikasi
+                informasi DNS, melindungi network file sistem, dan menggunakan
+                firewall untuk melindungi jaringan privat dan jaringan
+                eksternal.
+              </p>
+            </ol>
+            <!-- Kriptografi -->
+            <h3 class="sub-title" id="4"><li>Kriptografi</li></h3>
+            <ol>
+              <li>
+                Cryptography adalah suatu ilmu ataupun seni untuk mengamankan
+                pesan. Biasanya dilakukan oleh cryptographer.
+              </li>
+              <li>
+                Cryptanalysis adalah suatu ilmu ataupun seni untuk
+                membuka/memecahkan ciphertext. Biasanya dilakukan oleh
+                cryptanalyst.
+              </li>
+              <li>
+                Cryptographic system (cryptosystem) adalah suatu fasilitas untuk
+                mengubah plaintext ke ciphertext maupun sebaliknya.
+              </li>
+            </ol>
+            <!-- Karakteristik Cryptosystem yang Baik -->
+            <h3 class="sub-title" id="5">
+              <li>Karakteristik Cryptosystem yang Baik</li>
+            </h3>
+            <ol>
+              <li>
+                Keamanan sistem terletak di dalam kerahasiaan kunci, bukan di
+                dalam kerahasiaan algoritma yang digunakan.
+              </li>
+              <li>Memiliki ruang kunci (keyspace) yang besar.</li>
+              <li>
+                Menghasilkan ciphertext yang terlihat acak dalam seluruh uji
+                coba statistik dilakukan.
+              </li>
+              <li>Mampu menahan seluruh serangan yang dikenali sebelumnya.</li>
+            </ol>
+            <!-- Tipe-tipe Program Jahat -->
+            <h3 class="sub-title" id="6">
+              <li>Tipe-tipe Program Jahat</li>
+            </h3>
+            <ol>
+              <li>
+                Bacteria, berupa program yang mengonsumsi sumber daya sistem
+                dengan menduplikat dirinya sendiri.
+              </li>
+              <li>
+                Logic bomb, berupa logik yang menempel pada program komputer
+                sehingga memeriksa keadaan di sistem.
+              </li>
+              <li>
+                Trapdoor, berupa celah yang tidak diketahui di satu program
+                untuk memberikan akses tanpa metode-metode otentifikasi normal.
+              </li>
+              <li>
+                Trojan horse, berupa program yang tidak diketahui yang terpasang
+                pada komputer.
+              </li>
+              <li>
+                Virus, berupa kode yang terpasang dalam program sehingga dapat
+                memodifikasi program-program tanpa diketahui.
+              </li>
+              <li>
+                Worm, berupa program yang menduplikat dirinya sendiri dan
+                mengirim duplikat tersebut ke komputer lain yang terhubung
+                jaringan.
+              </li>
+            </ol>
+          </ol>
+        </div>
+      </div>
+    </main>
+
+    <!-- Button Scroll to Top -->
+    <div class="btnToTop">
+      <i class="bx bx-up-arrow-alt"></i>
+    </div>
+    <!-- Akhir Button Scroll to Top -->
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright 2022 🔥, by Anas Punggawa</p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Local Javascript -->
+    <script src="../assets/javascript/script.js"></script>
+    <script src="../assets/javascript/articles-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kriptografi</title>
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Web -->
+    <link rel="icon" href="../assets/img/icon.ico" type="image/icon type" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"><a href="../profile.html">Punggawa</a></span>
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="./profile.html">Punggawa</a></span>
+            <i class="bx bx-x sidebarClose"></i>
+          </div>
+          <ul class="nav-links">
+            <li>
+              <img src="../assets/img/profileSideBar.JPG" alt="Anas Punggawa" />
+            </li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../profile.html">Profile</a></li>
+          </ul>
+          <div class="icons">
+            <a href="https://www.facebook.com/anaspunggawa.anas" target="_blank"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+            <a href="https://www.instagram.com/anspunggawa/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://github.com/AnasPunggawa" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <main>
+      <div class="container">
+        <div class="hero">
+          <img
+            src="../assets/img/hero-pertemuan 5_kriptografi.JPG"
+            alt="kriptografi"
+          />
+        </div>
+        <div class="content">
+          <h2>Kriptografi</h2>
+          <p class="date">Kamis, 10 Maret 2022</p>
+          <a href="#" class="hashtag">#pertemuan5</a>
+          <div class="daftar-isi">
+            <p class="daftarIsiOnClick">Daftar Isi</p>
+            <ol>
+              <a href="#1">
+                <li>Sejarah Kriptografi</li>
+              </a>
+              <a href="#2">
+                <li>Kriptanalisis</li>
+              </a>
+              <a href="#3">
+                <li>Layanan yang Disediakan Kriptografi</li>
+              </a>
+              <a href="#4">
+                <li>Kriptografi Kunci-Simetri</li>
+              </a>
+              <a href="#5">
+                <li>Kriptografi Kunci-Asimetris</li>
+              </a>
+              <a href="#6">
+                <li>Kriptografi Berdasarkan Algoritma</li>
+              </a>
+            </ol>
+          </div>
+          <p>
+            Cryptografi terdiri dari 2 kata yaitu crypto (rahasia) dan graphy
+            (tulisan). Sehingga Kriptografi berarti tulisan yang bersifat
+            rahasia. Menurut Schneier (1996), cryptografi didefinisikan sebagai
+            ilmu dan seni untuk menjaga pesan agar tetap aman. Menez (1996)
+            berpendapat bahwa kriptografi adalah ilmu yang mempelajari
+            teknik-teknik matematika yang berhubungan dengan aspek keamanan
+            informasi seperti kerahasiaan, integritas data, serta otentikasi.
+            Dalam kriptografi terdapat 2 proses utama, yaitu Enkripsi dan
+            Dekripsi.
+          </p>
+          <p>
+            Dalam kriptografi, terdapat istilah-istilah yang perlu diketahui
+            sebagai berikut.
+          </p>
+          <ul>
+            <li>
+              Plaintext (P), yaitu pesan yang akan dikirim (yang biasanya
+              berisikan data asli).
+            </li>
+            <li>
+              Ciphertext (C), yaitu pesan yang ter-enkripsi (tersandi) yang
+              merupakan hasil dari proses enkripsi.
+            </li>
+            <li>
+              Kunci (K), yaitu suatu bilangan yang bersifat rahasia yang
+              digunakan untuk proses enkripsi dan dekripsi.
+            </li>
+            <li>
+              Enkripsi (encryption), yaitu proses pengubahan dari plaintext
+              menjadi ciphertext
+            </li>
+            <li>
+              Dekripsi (decryption), yaitu kebalikan dari enkripsi yakni proses
+              pengubahan dari ciphertext menjadi plaintext, sehingga berupa data
+              awal/asli.
+            </li>
+          </ul>
+          <div class="hero pict">
+            <img
+              src="../assets/img/pict-pertemuan 5_proses enkripsi dan dekripsi.png"
+              alt="proses enkripsi dan dekripsi"
+            />
+          </div>
+          <p>Berikut adalah notasi matematis</p>
+          <p>Misalkan:</p>
+          <p>C = ciphertext</p>
+          <p>P = plaintext</p>
+          <p>Maka, fungsi enkripsi E memetakan P ke C:</p>
+          <p>E(P) = C</p>
+          <p>Maka, fungsi dekripsi D memetakan C ke P:</p>
+          <p>D(C) = P</p>
+          <ol>
+            <!-- Sejarah Kriptografi -->
+            <h3 class="sub-title" id="1"><li>Sejarah Kriptografi</li></h3>
+            <p>
+              Sejarah kriptografi terulis lengkap dalam sebuah buku The
+              Codebreakers oleh David Kahn. Terdapat 4 kelompok orang yang
+              menggunakan dan berkontribusi dalam kriptografi yaitu:
+            </p>
+            <ul>
+              <li>Militer (termasuk intelejen dan mata-mata)</li>
+              <li>Korp Diplomatik</li>
+              <li>Diarist</li>
+              <li>
+                Para pecinta/kekasih yang berkomunikasi secara rahasia dalam
+                buku Kamasutra, India
+              </li>
+            </ul>
+            <p>
+              Contoh sejarahnya adalah pada saat perang dunia ke-2, pemerintah
+              Nazi Jerman membuat mesin enkripsi yang dinamakan Enigma. Lalu
+              Enigma berhasil dipecahkan oleh Sekutu.
+            </p>
+            <!-- Kriptanalisis -->
+            <h3 class="sub-title" id="2"><li>Kriptanalisis</li></h3>
+            <p>
+              Kriptanalisis (cryptanalysis) merupakan ilmu dan seni yang
+              digunakan untuk memecahkan ciphertext menjadi plaintext tanpa
+              mengetahui kunci yang digunakan. Orang yang melakukan
+              kriptanalisis disebut kriptanalis. Sedangkan orang yang merancang
+              alogritma kriptografi disebut kriptografer. Kriptanalisis
+              berlawanan dengan kriptografi karena kriptanalisis dalam
+              memecahkan ciphertext tidak menggunakan kunci.
+            </p>
+            <p>
+              Tujuan dari kriptanalisis adalah untuk memecahkan pesan,
+              memecahkan kunci, memecahkan algoritma kriptografi, memecahkan
+              cara kerja alogritma kriptografi, dan membandingkan algoritma
+              dengan kriptografi lainnya.
+            </p>
+            <p>
+              Kriptografer dan kriptanalis memiliki persamaan yaitu
+              menerjemahkan ciphertext menjadi plaintext. Sedangkan perbedaannya
+              adalah kriptogtafi bekerja atas keputusan pengirim ataupun
+              penerima namun untuk kriptanalis berkerja tanpa keputusan pengirim
+              ataupun penerima pesan.
+            </p>
+            <!-- Layanan yang Disediakan Kriptografi -->
+            <h3 class="sub-title" id="3">
+              <li>Layanan yang Disediakan Kriptografi</li>
+            </h3>
+            <ol>
+              <li>Confidentiality (Kerahasiaan)</li>
+              <p>
+                Berupa layanan yang digunakan untuk menjaga isi pesan dari
+                siapapun yang tidak berhak untuk membacanya.
+              </p>
+              <li>Integrity (Integritas)</li>
+              <p>
+                Berupa layanan yang digunakan untuk menjamin bahwa pesan masih
+                asli/utuh dan belum pernah dimanupulasi selama pengiriman.
+              </p>
+              <li>Authentication (Autentikasi)</li>
+              <p>
+                Berupa layanan yang digunakan untuk mengidentifikasi keaslian
+                pihak-pihak yang berkomunikasi (pengguna autentikasi) dan untuk
+                mengidentifikasi keaslian sumber pesan (autentikasi asal data).
+              </p>
+              <li>Non-repudiation</li>
+              <p>
+                Berupa layanan yang digunakan untuk mencegah entitas yang
+                berkomunikasi melakukan penyangkalan bahwa telah melakukan suatu
+                aktivitas tertentu.
+              </p>
+            </ol>
+            <p>
+              Adapun contoh kriptografi dalam kehidupan sehari-hari adalah ATM
+              tempat mengambil uang, telepon genggang (HP), komputer di
+              lab/kantor, internet, gedung-gedung bisnis, dan pangkalan militer.
+            </p>
+            <!-- Kriptografi Kunci-Simetri -->
+            <h3 class="sub-title" id="4">
+              <li>Kriptografi Kunci-Simetri</li>
+            </h3>
+            <p>Kriptografi Kunci-Simetri merupakan algoritma kriptografi dimana kunci yang digunakan untuk proses enkripsi sama dengan kunci untuk proses dekripsi. Dikenal juga sebagai kunci simetsi, kunci privat, ataupun kunci rahasia (secret key). Algoritma kriptografinya disebut algoritma simetri atau algoritma konvensional.</p>
+            <div class="hero pict">
+              <img
+                src="../assets/img/pict-pertemuan 5_kriptografi kunci-simetri.png"
+                alt="kriptografi kunci-simetri"
+              />
+            </div>
+            <p>Ciphertext = E (K,P)</p>
+            <p>Plaintext = D (K,C)</p>
+            <p>Pada kriptografi simetrik, kunci ditransfer secara aman.</p>
+            <p>Adapun contoh algoritma simetri adalah AES (Advanced Encryption Standard), DES (Data Encryption Standard), Blowfish, IDEA, GOST, Serpent, dan lain-lain.</p>
+            <!-- Kriptografi Kunci-Asimetris -->
+            <h3 class="sub-title" id="5">
+              <li>Kriptografi Kunci-Asimetris</li>
+            </h3>
+            <p>Kriptografi Kunci-Aimetri merupakan algoritma kriptografi dimana kunci yang digunakan untuk proses enkripsi berbeda dengan kunci untuk proses dekripsi. Dikenal juga sebagai kriptografi kunci-publik. Karena kunci enkripsi bersifat publik (public key) sedangkah kunci dekripsi bersifat rahasia (secret key atau private key).</p>
+            <p>Penggunaan Kriptografi Kunci-Aimetri memiliki keuntungan yaitu tidak membutuhkan distribusi kunci private seperti pada sistem kriptografi simetri, kunci publik dapat dikirim ke penerima melalui jalur yang sama dengan jalur yang digunakan unuk mengirim pesan, dan kedua jumlah kunci dapat ditekan.</p>
+            <div class="hero pict">
+              <img
+                src="../assets/img/pict-pertemuan 5_kriptografi kunci-asimetris.png"
+                alt="kriptografi kunci-asimetris"
+              />
+            </div>
+            <p>C = E (Kpub,M)</p>
+            <p>M = D (Kpriv,C)</p>
+            <p>Kpub dapat dilihat atau diketahui siapa saja.</p>
+            <p>Adapun contoh algoritma asimetris adalah ECC (Elliptic Curve Cryptography), RSA, ElGamal, Diffie-Hellman Key Exchange, DSA, dan lain-lain.</p>
+            <!-- Kriptografi Berdasarkan Algoritma -->
+            <h3 class="sub-title" id="6">
+              <li>Kriptografi Berdasarkan Algoritma</li>
+            </h3>
+            <ol>
+              <li>Algoritma Kriptografi Klasik</li>
+              <p>Algoritma Kriptografi Klasik merupakan penggunaan algoritma sederhana sehingga ciphertext lebih mudah untuk dipecahkan melalui penggunaan statistik, terkaan, intuis, tebakan, dan sebagainya. Algoritma ini memiliki karakteristik berbasis karakter, menggunakan pena dan kertas saja, belum ada komputer karena dibuat secara manual, dan termasuk kriptografi kunci simetris. Contohnya adalah Vigenere Cipher.</p>
+              <li>Algoritma Kriptografi Modern</li>
+              <p>Algoritma Kriptografi Modern merupakan perbaikan dari kriptografi klasik dimana terdapat berbagai macam algoritma yang dimaksudkan untuk mengamankan informasi yang dikirim melalui jaringan komputer. Algoritma ini memiliki karakteristik yang umumnya bekerja dalam bentuk bit yang berarti semua data dan informasi (baik kunci, plaintext, maupun ciphertext) disajikan dalam rangkaian (string) bit biner (0 dan 1), dan rangkaian bit yang disajikan plaintext di-enkripsi menjadi ciphertext dalam bentuk rangkaian bit, begitu pula sebaliknya. Contohnya adalah ElGamal.</p>
+            </ol>
+        </div>
+      </div>
+    </main>
+
+    <!-- Button Scroll to Top -->
+    <div class="btnToTop">
+      <i class="bx bx-up-arrow-alt"></i>
+    </div>
+    <!-- Akhir Button Scroll to Top -->
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright 2022 🔥, by Anas Punggawa</p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Local Javascript -->
+    <script src="../assets/javascript/script.js"></script>
+    <script src="../assets/javascript/articles-script.js"></script>
+  </body>
+</html>
